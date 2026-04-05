@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DancePractice — ダンス練習プレイヤー",
+  "version": "1.0",
+  "description": "YouTube動画で反転・ABリピート・速度変更ができるダンス練習用Chrome拡張機能",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
